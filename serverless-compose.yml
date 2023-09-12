@@ -1,0 +1,5 @@
+services:
+  foodie:
+    path: ./services/foodie
+  kitchen:
+    path: ./services/kitchen

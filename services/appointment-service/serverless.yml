@@ -1,0 +1,22 @@
+service: appointment-service
+
+provider:
+  name: aws
+  runtime: nodejs16.x
+  stage: dev
+  region: us-east-1
+  apiGateway:
+    restApiId: 3tkik28qcj    #replace this with API gateway ID
+    restApiRootResourceId: 4zbsq6bex0 #replace this with API gateway root resource ID "/""
+
+functions:
+  getData:
+    handler: handler.getData
+    events:
+      - http:
+          path: test
+          method: get
+          cors: true
+
+plugins:
+  - serverless-offline

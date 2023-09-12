@@ -1,0 +1,16 @@
+# shared-api-gateway/serverless.yml
+
+service: shared-api-gateway
+
+provider:
+  name: aws
+  stage: dev
+  runtime: nodejs14.x
+
+resources:
+  Resources:
+    SharedApiGateway:
+      Type: AWS::ApiGateway::RestApi
+      Properties:
+        Name: SharedApiGateway
+        Description: A shared API Gateway for multiple services

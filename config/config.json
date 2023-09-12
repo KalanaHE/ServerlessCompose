@@ -1,0 +1,16 @@
+{
+  "appointment_db": {
+    "username": "admin",
+    "password": "pissu.Poosa2022",
+    "database": "test1",
+    "host": "ihelpdev.c46ffql6rvr3.us-east-1.rds.amazonaws.com",
+    "dialect": "mysql"
+  },
+  "doctor_db": {
+    "username": "admin",
+    "password": "pissu.Poosa2022",
+    "database": "test2",
+    "host": "ihelpdev.c46ffql6rvr3.us-east-1.rds.amazonaws.com",
+    "dialect": "mysql"
+  }
+}

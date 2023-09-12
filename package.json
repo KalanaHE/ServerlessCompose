@@ -1,0 +1,23 @@
+{
+  "name": "test-monorepo-serverless",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "appointmentdb:migrate": "sequelize --options-path .sequelize-appointmentdb-rc --env appointment_db db:migrate",
+    "doctordb:migrate": "sequelize --options-path .sequelize-doctordb-rc --env doctor_db db:migrate",
+    "appointmentdb:seed": "sequelize --options-path .sequelize-appointmentdb-rc --env appointment_db db:seed:all",
+    "doctordb:seed": "sequelize --options-path .sequelize-doctordb-rc --env doctor_db db:seed:all"
+  },
+  "author": "Kalana Hettiarachchi",
+  "license": "ISC",
+  "devDependencies": {
+    "@serverless/compose": "^1.3.0",
+    "sequelize-cli": "^6.6.1",
+    "serverless-offline": "^12.0.4"
+  },
+  "dependencies": {
+    "mysql2": "^3.6.1",
+    "sequelize": "^6.33.0"
+  }
+}
