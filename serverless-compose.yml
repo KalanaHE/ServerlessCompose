@@ -1,5 +1,5 @@
 services:
   foodie:
-    path: ./services/foodie
+    path: ./services/appointment-service
   kitchen:
-    path: ./services/kitchen
+    path: ./services/doctor-service
